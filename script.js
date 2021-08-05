@@ -6,7 +6,9 @@ const color = document.querySelector('#color')
 
 const search = document.querySelector("#search")
 const text = document.querySelector("#text")
+const reset = document.querySelector("#reset")
 let tg = 0
+let count = 0
 
 btn_toggle.onclick = () => {
   if(tg === 0) {
@@ -21,3 +23,7 @@ btn_toggle.onclick = () => {
   }
 }
 
+reset.onclick = () => {
+  length.value = 5
+  color.value = "#FF0000"
+}
